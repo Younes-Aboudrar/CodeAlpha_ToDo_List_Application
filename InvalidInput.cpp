@@ -1,18 +1,22 @@
 // This is the invalid input function
 void InvalidInput(){
-    int choice = 0;
     clearScreen();
+    int new_choice = 0;
     cout << "Invalid input!" << endl;
     cout << "[1] Retry again." << endl;
     cout << "[2] Exit." << endl;
     cout << "Please select an option (1-2): ";
-    cin >> choice;
-    if (choice == 2)
+    cin >> new_choice;
+    if (new_choice == 2)
     {
         Exit();
     }
-    if (choice != 1)
+    if (new_choice != 1)
     {
-        InvalidInput();
+        return InvalidInput();
+    }
+    else
+    {
+        return ask_user();
     }
 }

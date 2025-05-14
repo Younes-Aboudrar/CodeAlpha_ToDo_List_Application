@@ -24,17 +24,7 @@ void tasks_mark_complete() {
 }
 
 int main() {
-    clearScreen();
-    int choice = 0;
-    while(choice < 1 || choice > 5){
-        displayMainMenu();
-        cin >> choice;
-        clearScreen();
-        if (choice < 1 || choice > 6) {
-            void InvalidInput();
-        }
-    }
-    cout << "\033[2J\033[1;1H";
+    int choice = ask_user();
     switch (choice) {
         case 1:
             tasks_view();
@@ -49,10 +39,10 @@ int main() {
             tasks_edit();
             break;
         case 5:
-            tasks_mark_complete;
+            tasks_mark_complete();
             break;
         case 6:
-            cout << "Exiting the program." << endl;
+            Exit();
             break;
     }
     return 0;

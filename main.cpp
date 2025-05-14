@@ -1,6 +1,6 @@
-#include <iostream>
+#include "headers.hpp"
+#include "view.hpp"
 
-using namespace std;
 
 void tasks_view() {
     cout << "Your tasks:" << endl;
@@ -24,21 +24,17 @@ void tasks_mark_complete() {
 }
 
 int main() {
+    clearScreen();
     int choice = 0;
     while(choice < 1 || choice > 5){
-        cout << "To-Do List:" << endl;
-        cout << "[1] View tasks" << endl;
-        cout << "[2] Add task" << endl;
-        cout << "[3] Remove task" << endl;
-        cout << "[4] Edit task" << endl;
-        cout << "[5] Mark task as complete" << endl;
-        cout << "[6] Exit" << endl;
-        cout << "Please select an option (1-6): ";
+        displayMainMenu();
         cin >> choice;
+        clearScreen();
         if (choice < 1 || choice > 6) {
-            cout << "Invalid choice. Please try again." << endl;
+            void InvalidInput();
         }
     }
+    cout << "\033[2J\033[1;1H";
     switch (choice) {
         case 1:
             tasks_view();

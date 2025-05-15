@@ -1,5 +1,5 @@
-// This is the exit function
-void Exit(){
-    cout << "Exiting the program, Have a good day!" << endl;
+// Exit function
+void Exit() {
+    cout << "Exiting the program. Goodbye!" << endl;
     exit(0);
 }

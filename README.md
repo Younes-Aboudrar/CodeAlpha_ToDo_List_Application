@@ -24,4 +24,7 @@ How to use this app?
 g++.exe main.cpp Task.cpp -o main.exe
 ```
 4. **Run the executable**:
-    - 
+    - Use the following command
+```bash
+./main.exe
+```

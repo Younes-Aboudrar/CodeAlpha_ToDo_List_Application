@@ -11,7 +11,7 @@ How to use this app?
 # Windows
 ## Prerequisites
 - **C++ Compiler**: Ensure you have a C++ compiler installed:
-  - **Windows**: Follow [This guide](otherfiles/guideWin.md) to setup your C++ compiler on your machine.
+  - **Windows**: Follow [This guide](https://github.com/Younes-Aboudrar/CodeAlpha_ToDo_List_Application/blob/main/otherFiles/guideWin.md) to setup your C++ compiler on your machine.
 
 ## Compilation
 1. **Clone or Download the project**:
